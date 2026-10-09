@@ -1,0 +1,445 @@
+/* ==========================================================================
+   MINIMALIST DESIGN SYSTEM (Linear / Vercel Aesthetic)
+   Light Mode (Default) & Dark Mode (Toggled)
+   ========================================================================== */
+
+:root {
+  /* Light Mode (Default) */
+  --bg: #ffffff;
+  --bg-subtle: #fafafa;
+  --surface: #ffffff;
+  --text: #111111;
+  --text-muted: #666666;
+  --text-subtle: #8e8e93;
+  --border: #e5e5e7;
+  --border-subtle: #f0f0f2;
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  --code-bg: #f4f4f5;
+  --hover-bg: #f4f4f5;
+  --accent: #111111;
+  
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  
+  --max-width: 680px;
+  --nav-height: 56px;
+  --transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+}
+
+[data-theme="dark"] {
+  /* Dark Mode */
+  --bg: #090a0f;
+  --bg-subtle: #0f1015;
+  --surface: #121319;
+  --text: #ededed;
+  --text-muted: #8b8f97;
+  --text-subtle: #575a63;
+  --border: #1f2127;
+  --border-subtle: #17181e;
+  --nav-bg: rgba(9, 10, 15, 0.85);
+  --code-bg: #14151b;
+  --hover-bg: #16171f;
+  --accent: #ffffff;
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-height) + 24px);
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================================
+   NAVIGATION BAR
+   ========================================================================== */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  background: var(--nav-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  transition: var(--transition);
+}
+
+.nav-container {
+  max-width: var(--max-width);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  transition: var(--transition);
+}
+
+.brand-link:hover {
+  opacity: 0.7;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  list-style: none;
+}
+
+.nav-item a {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.nav-item a:hover,
+.nav-item a.active {
+  color: var(--text);
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  border-radius: 6px;
+  transition: var(--transition);
+}
+
+.theme-toggle-btn:hover {
+  color: var(--text);
+  background: var(--hover-bg);
+}
+
+.theme-toggle-btn svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.8;
+}
+
+/* Mobile Toggle */
+.mobile-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  padding: 6px;
+  cursor: pointer;
+}
+
+.mobile-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Mobile Dropdown */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: var(--nav-height);
+  left: 0;
+  right: 0;
+  background: var(--nav-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 20px;
+  z-index: 99;
+}
+
+.mobile-menu.open {
+  display: block;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mobile-menu a {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 6px 0;
+  transition: var(--transition);
+}
+
+.mobile-menu a:hover {
+  color: var(--text);
+}
+
+/* ==========================================================================
+   LAYOUT & SECTIONS
+   ========================================================================== */
+main {
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: calc(var(--nav-height) + 40px) 20px 80px;
+  flex: 1;
+}
+
+.section {
+  padding: 42px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.section-title {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-subtle);
+  margin-bottom: 24px;
+}
+
+/* About / Intro Section */
+.intro-section {
+  padding-top: 24px;
+}
+
+.intro-name {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  line-height: 1.25;
+  margin-bottom: 6px;
+}
+
+.intro-role {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.intro-bio {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.intro-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.intro-links a,
+.text-link {
+  font-size: 0.9rem;
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 4px;
+  transition: var(--transition);
+}
+
+.intro-links a:hover,
+.text-link:hover {
+  text-decoration-color: var(--text);
+}
+
+/* Clean List Component (Experience, Projects, Achievements) */
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.item-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.item-title a {
+  color: var(--text);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.item-title a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.item-meta {
+  font-size: 0.825rem;
+  font-family: var(--font-mono);
+  color: var(--text-subtle);
+  white-space: nowrap;
+}
+
+.item-subtitle {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.item-description {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-top: 2px;
+}
+
+/* Placeholder Note for gradual content */
+.placeholder-note {
+  font-size: 0.875rem;
+  color: var(--text-subtle);
+  line-height: 1.6;
+}
+
+/* Skills Layout */
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skills-category {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skills-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.skills-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Contact Links */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+}
+
+.contact-label {
+  width: 70px;
+  color: var(--text-subtle);
+  font-size: 0.825rem;
+  font-family: var(--font-mono);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 20px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.825rem;
+  color: var(--text-subtle);
+}
+
+footer a {
+  color: var(--text-subtle);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+footer a:hover {
+  color: var(--text);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 600px) {
+  .nav-menu {
+    display: none;
+  }
+  .mobile-toggle {
+    display: flex;
+  }
+  .intro-name {
+    font-size: 1.5rem;
+  }
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+}
