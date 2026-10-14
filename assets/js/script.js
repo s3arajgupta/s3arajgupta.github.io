@@ -1,5 +1,5 @@
 /**
- * al-folio Aesthetic Interactive Engine (Pure Vanilla JavaScript)
+ * Portfolio Interactive Engine (Pure Vanilla JavaScript)
  * Powers theme switching, scroll progress, search modal, publication filters, and accordions.
  */
 

@@ -1,6 +1,5 @@
 /* ==========================================================================
-   AL-FOLIO AESTHETIC DESIGN SYSTEM (Pure Vanilla CSS)
-   Inspired by https://rachtsy.github.io/ and https://github.com/alshedivat/al-folio
+   PORTFOLIO DESIGN SYSTEM (Pure Vanilla CSS)
    Light Theme (Clean Academic Whitespace) & Dark Theme (Slate/Charcoal)
    ========================================================================== */
 
@@ -15,7 +14,7 @@
   --font-serif: 'Roboto Slab', Georgia, serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  /* Dimensions (al-folio standard content width) */
+  /* Dimensions (standard content width) */
   --content-max-width: 880px;
   --nav-height: 60px;
   --radius-sm: 4px;
@@ -44,7 +43,7 @@
   --border: #e2e8f0;
   --border-subtle: #edf2f7;
 
-  /* Iconic al-folio blue link and accent color */
+  /* Primary blue link and accent color */
   --accent: #0076df;
   --accent-hover: #005bb5;
   --accent-subtle: rgba(0, 118, 223, 0.08);
@@ -69,7 +68,7 @@
   --modal-backdrop: rgba(15, 23, 42, 0.4);
 }
 
-/* Dark Mode Tokens (al-folio Slate / Charcoal Aesthetic) */
+/* Dark Mode Tokens (Slate / Charcoal Aesthetic) */
 [data-theme="dark"] {
   --bg: #121212;
   --surface: #18181b;
@@ -469,7 +468,7 @@ button {
   line-height: 1.2;
 }
 
-/* News Table (al-folio standard) */
+/* News Table */
 .news-block {
   margin-top: 28px;
 }
@@ -902,7 +901,7 @@ button {
 }
 
 /* --------------------------------------------------------------------------
-   9. Publications Section (al-folio Signature Academic Papers)
+   9. Publications Section (Academic & Technical Papers)
    -------------------------------------------------------------------------- */
 .bibsearch-container {
   margin-bottom: 24px;
@@ -1335,7 +1334,7 @@ button {
 }
 
 /* --------------------------------------------------------------------------
-   13. Site Footer (al-folio standard)
+   13. Site Footer
    -------------------------------------------------------------------------- */
 .site-footer {
   border-top: 1px solid var(--border);

@@ -1,6 +1,6 @@
 # Swaraj Gupta — Portfolio & Research Website
 
-A clean, minimalist personal website for an **AI Engineer & Systems Architect**, replicating the iconic **[al-folio](https://github.com/alshedivat/al-folio)** academic theme (inspired by [rachtsy.github.io](https://rachtsy.github.io/)) in **pure, zero-dependency Vanilla HTML, CSS, and JavaScript**.
+A clean, minimalist personal website for an **AI Engineer & Systems Architect** in **pure, zero-dependency Vanilla HTML, CSS, and JavaScript**.
 
 🌐 **Live Website**: [s3arajgupta.github.io](https://s3arajgupta.github.io/)
 
@@ -9,7 +9,7 @@ A clean, minimalist personal website for an **AI Engineer & Systems Architect**,
 ## ✨ Features & Architecture
 
 - **Zero Build Steps & Zero Dependencies**: Runs directly in any browser with instant GitHub Pages deployment (no Ruby, Jekyll, npm, or bundlers required).
-- **Iconic al-folio Academic Layout**:
+- **Clean Academic Layout**:
   - Two-column asymmetric hero on the *About* page with floating profile card, contact details, and social icon dock.
   - Interactive **News / Latest Updates** timeline table.
   - Signature **Publications & Technical Papers** section with conference badges (`ICLR`, `ARXIV`, `SYS`), expandable `Abs` abstract panels, and expandable `BibTeX` citations with a **one-click copy button**.
@@ -19,7 +19,7 @@ A clean, minimalist personal website for an **AI Engineer & Systems Architect**,
   - Accessible via the top navbar button or pressing <kbd>Ctrl</kbd> + <kbd>K</kbd> / <kbd>Cmd</kbd> + <kbd>K</kbd>.
   - Built with native `<dialog>` for accessibility, full keyboard navigation (<kbd>&uarr;</kbd> / <kbd>&darr;</kbd> / <kbd>Enter</kbd>), and instant section jumping.
 - **True Dual-Theme System (Light & Dark)**:
-  - **Light Mode**: Pure crisp white (`#ffffff`) with classic al-folio blue accents (`#0076df`).
+  - **Light Mode**: Pure crisp white (`#ffffff`) with classic blue accents (`#0076df`).
   - **Dark Mode**: Slate / charcoal (`#121212`) with cyan / ice blue accents (`#4daafc`).
   - Seamless toggle with `localStorage` persistence and automatic system OS preference detection without FOUC (flash of unstyled content).
 - **Top Reading Progress Bar**: Thin accent bar tracking scroll depth across the page.
@@ -204,7 +204,7 @@ Colors are defined using CSS Custom Properties in [`assets/css/style.css`](asset
 
 - **Light Mode (`:root, [data-theme="light"]`)**:
   - `--bg`: `#ffffff` (Page background)
-  - `--accent`: `#0076df` (al-folio link & highlight blue)
+  - `--accent`: `#0076df` (Link & highlight blue)
   - `--text-primary`: `#212529` (Main body text)
 - **Dark Mode (`[data-theme="dark"]`)**:
   - `--bg`: `#121212` (Slate/Charcoal background)
@@ -215,4 +215,4 @@ Colors are defined using CSS Custom Properties in [`assets/css/style.css`](asset
 
 ## 📄 License
 
-Open-source and free to use. Attribution to the [al-folio](https://github.com/alshedivat/al-folio) project is appreciated.
+Open-source and free to use.
