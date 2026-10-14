@@ -532,6 +532,62 @@ button {
   box-shadow: var(--shadow-md);
 }
 
+/* Official Certification Badges Showcase in Profile Card */
+.profile-badges-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.profile-badge-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 6px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.profile-badge-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+}
+
+.profile-badge-img {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  display: block;
+  transition: transform var(--transition-fast);
+}
+
+.profile-badge-link:hover .profile-badge-img {
+  transform: scale(1.06);
+}
+
+.profile-badge-caption {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-top: 6px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.profile-badge-link:hover .profile-badge-caption {
+  color: var(--accent);
+}
+
 .profile-avatar-wrapper {
   width: 100%;
   max-width: 240px;
@@ -1165,6 +1221,20 @@ button {
   transform: translateY(-1px);
   box-shadow: var(--shadow-sm);
   filter: brightness(1.08);
+}
+
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pill-badge-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: inline-block;
+  flex-shrink: 0;
 }
 
 /* --------------------------------------------------------------------------
