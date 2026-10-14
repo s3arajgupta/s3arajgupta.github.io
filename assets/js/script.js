@@ -190,21 +190,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalSearchInput = document.getElementById('modal-search-input');
   const modalSearchResults = document.getElementById('modal-search-results');
 
-  // Search Index Data
+  // Search Index Data (Accurately indexed from GitHub and LinkedIn profile)
   const searchIndex = [
-    { title: 'About Swaraj Gupta', subtitle: 'Overview, Bio, and Research Philosophy', url: '#about', keywords: 'ai systems architect bio about' },
-    { title: 'Core Focus & Interests', subtitle: 'Multi-Agent Coordination, Distributed Architecture, ML Serving', url: '#about', keywords: 'llm agents distributed systems rag' },
-    { title: 'Experience: AI Engineer & Systems Architect', subtitle: 'Autonomous Systems & Intelligent Architecture (2024–Present)', url: '#experience', keywords: 'work experience jobs roles current' },
-    { title: 'Experience: Backend Systems & ML Engineer', subtitle: 'Cloud Intelligence & Data Platforms (2022–2024)', url: '#experience', keywords: 'work history fastapi vector dbs' },
-    { title: 'Project: AgentMesh Engine', subtitle: 'Resilient multi-agent orchestration framework with parallel tool evaluation', url: '#projects', keywords: 'agentmesh python open source agents orchestration' },
-    { title: 'Project: NeuralStream Vector Pipeline', subtitle: 'High-throughput embedding ingestion and semantic ranking engine', url: '#projects', keywords: 'neuralstream vector hnsw embeddings pytorch' },
-    { title: 'Project: Distributed Guardrail Proxy', subtitle: 'Deterministic schema compliance and verification for LLM microservices', url: '#projects', keywords: 'guardrails proxy security types' },
-    { title: 'Publication: Deterministic Verification in Multi-Agent Systems', subtitle: 'arXiv Preprint (2025)', url: '#publications', keywords: 'paper publication multi-agent verification arxiv' },
-    { title: 'Publication: Adaptive Layer Partitioning for Vector Inference', subtitle: 'Technical Report (2024)', url: '#publications', keywords: 'paper publication vector indexing memory' },
-    { title: 'Skills: AI & Machine Learning', subtitle: 'Autonomous Agents, LLM Orchestration, RAG, PyTorch', url: '#skills', keywords: 'skills ai ml pytorch huggingface' },
-    { title: 'Skills: Systems & Architecture', subtitle: 'Distributed Systems, Microservices, Docker, Kubernetes', url: '#skills', keywords: 'skills systems docker kubernetes architecture' },
-    { title: 'Skills: Languages & Databases', subtitle: 'Python, TypeScript, SQL, PostgreSQL, Redis, Linux', url: '#skills', keywords: 'skills python typescript sql postgres redis' },
-    { title: 'Contact Information', subtitle: 'Email, GitHub, Location', url: '#contact', keywords: 'email github contact message reach out' }
+    { title: 'About Swaraj Gupta', subtitle: 'AI Engineer & Distributed Systems Architect | NUS-ISS & Ex-Ericsson', url: '#about', keywords: 'swaraj gupta bio about nus iss ericsson ai systems architect' },
+    { title: 'Core Focus & Interests', subtitle: 'Agentic AI, Cloud-Native Big Data, MLOps & Explainable AI', url: '#about', keywords: 'agentic reasoning llm mlops kubernetes spark xai dsp' },
+    { title: 'Experience: NUS-ISS (MTech AIS)', subtitle: 'Graduate Student in Artificial Intelligence Systems (2026–Present)', url: '#experience', keywords: 'nus iss singapore master ai artificial intelligence systems' },
+    { title: 'Experience: Ericsson', subtitle: 'Senior Data & Machine Learning Engineer — Big Data & MLOps (2022–2026)', url: '#experience', keywords: 'ericsson work experience jobs big data pyspark kubernetes mlops' },
+    { title: 'Experience: Samsung R&D Institute', subtitle: 'Deep Learning Research Intern — PRISM 1st Place Winner (2022)', url: '#experience', keywords: 'samsung prism hackathon winner deep learning speech audio keyword' },
+    { title: 'Experience: ÉTS Montréal', subtitle: 'Mitacs Globalink Research Intern in Data Science (2021)', url: '#experience', keywords: 'mitacs globalink ets montreal canada research intern software analytics' },
+    { title: 'Project: MLTracker Engine', subtitle: 'Enterprise MLOps experiment tracking and model governance platform', url: '#projects', keywords: 'mltracker mlflow python model registry experiment tracking champion challenger' },
+    { title: 'Project: VoxEmotion Intelligence', subtitle: 'Speech DSP & acoustic ML extracting 180D features for emotion classification', url: '#projects', keywords: 'voxemotion audio dsp librosa mfcc pytorch speech emotion' },
+    { title: 'Project: InterpretAI Suite', subtitle: 'Explainable AI platform with SHAP waterfall & algorithmic fairness auditing', url: '#projects', keywords: 'interpretai xai shap explainability fairness disparate impact' },
+    { title: 'Project: Vision-Language Captioning', subtitle: 'Encoder-decoder CNN-RNN neural network for automated image descriptions', url: '#projects', keywords: 'image captioning vision language cnn rnn multimodal pytorch' },
+    { title: 'Research: MLTracker Governance', subtitle: 'Cloud-Native MLOps Technical Report (2025)', url: '#research', keywords: 'research mltracker governance mlops model registry' },
+    { title: 'Research: Speech Emotion DSP', subtitle: 'Acoustic Deep Learning & Signal Processing Report (2024)', url: '#research', keywords: 'research acoustic prosody dsp speech emotion librosa' },
+    { title: 'Research: Samsung PRISM Award Winner', subtitle: 'Acoustic Deep Learning for Spoken Name Recognition (1st / 200+ teams)', url: '#research', keywords: 'research samsung prism award name calling audio deep learning' },
+    { title: 'Certification: CKAD (CNCF)', subtitle: 'Certified Kubernetes Application Developer (Valid 2024–2027)', url: '#skills', keywords: 'ckad certified kubernetes application developer cncf linux foundation' },
+    { title: 'Skills: AI, ML & MLOps', subtitle: 'Autonomous Agents, PyTorch, MLflow, Audio DSP, SHAP', url: '#skills', keywords: 'skills ai ml pytorch mlops mlflow librosa shap' },
+    { title: 'Skills: Cloud-Native & Systems', subtitle: 'Kubernetes (CKAD), Docker, Apache PySpark, Microservices, HLD', url: '#skills', keywords: 'skills kubernetes docker pyspark microservices distributed systems' },
+    { title: 'Contact Information', subtitle: 'Singapore, Email, LinkedIn, GitHub, LeetCode', url: '#contact', keywords: 'contact email linkedin github leetcode singapore reach out' }
   ];
 
   let selectedIndex = 0;
