@@ -206,6 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { title: 'Research: Speech Emotion DSP', subtitle: 'Acoustic Deep Learning & Signal Processing Report (2024)', url: '#research', keywords: 'research acoustic prosody dsp speech emotion librosa' },
     { title: 'Research: Samsung PRISM Award Winner', subtitle: 'Acoustic Deep Learning for Spoken Name Recognition (1st / 200+ teams)', url: '#research', keywords: 'research samsung prism award name calling audio deep learning' },
     { title: 'Certification: CKAD (CNCF)', subtitle: 'Certified Kubernetes Application Developer (Valid 2024–2027)', url: '#skills', keywords: 'ckad certified kubernetes application developer cncf linux foundation' },
+    { title: 'Certification: SnowPro Core (Snowflake)', subtitle: 'Snowflake Certified Core Professional', url: '#skills', keywords: 'snowpro core snowflake cloud data warehouse cert credentials' },
     { title: 'Skills: AI, ML & MLOps', subtitle: 'Autonomous Agents, PyTorch, MLflow, Audio DSP, SHAP', url: '#skills', keywords: 'skills ai ml pytorch mlops mlflow librosa shap' },
     { title: 'Skills: Cloud-Native & Systems', subtitle: 'Kubernetes (CKAD), Docker, Apache PySpark, Microservices, HLD', url: '#skills', keywords: 'skills kubernetes docker pyspark microservices distributed systems' },
     { title: 'Contact Information', subtitle: 'Singapore, Email, LinkedIn, GitHub, LeetCode', url: '#contact', keywords: 'contact email linkedin github leetcode singapore reach out' }
