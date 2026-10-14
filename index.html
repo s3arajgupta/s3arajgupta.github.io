@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swaraj Gupta | AI Engineer &amp; Distributed Systems Architect</title>
-  <meta name="description" content="Personal website of Swaraj Gupta — AI Engineer and Distributed Systems Architect specializing in reliable AI systems, cloud-native big data, and MLOps platforms.">
+  <meta name="description"
+    content="Personal website of Swaraj Gupta — AI Engineer and Distributed Systems Architect specializing in reliable AI systems, cloud-native big data, and MLOps platforms.">
   <meta name="author" content="Swaraj Gupta">
   <meta name="color-scheme" content="light dark">
 
@@ -15,7 +17,8 @@
 
   <!-- OpenGraph Social Metadata -->
   <meta property="og:title" content="Swaraj Gupta | AI Engineer &amp; Distributed Systems Architect">
-  <meta property="og:description" content="AI Engineer &amp; Distributed Systems Architect | Ex-Ericsson | MTech AIS @ NUS-ISS.">
+  <meta property="og:description"
+    content="AI Engineer &amp; Distributed Systems Architect | Ex-Ericsson | MTech AIS @ NUS-ISS.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://s3arajgupta.github.io/">
   <meta property="og:image" content="https://s3arajgupta.github.io/assets/img/CoverPhoto.webp">
@@ -23,12 +26,13 @@
   <!-- Twitter Card Metadata -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Swaraj Gupta | AI Engineer &amp; Distributed Systems Architect">
-  <meta name="twitter:description" content="AI Engineer &amp; Distributed Systems Architect | Ex-Ericsson | MTech AIS @ NUS-ISS.">
+  <meta name="twitter:description"
+    content="AI Engineer &amp; Distributed Systems Architect | Ex-Ericsson | MTech AIS @ NUS-ISS.">
   <meta name="twitter:image" content="https://s3arajgupta.github.io/assets/img/CoverPhoto.webp">
 
   <!-- Early Theme Init: Prevents Flash of Unstyled Content (FOUC) -->
   <script>
-    (function() {
+    (function () {
       const stored = localStorage.getItem('site-theme');
       if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.setAttribute('data-theme', 'dark');
@@ -41,10 +45,13 @@
   <!-- Google Fonts: Roboto & Roboto Slab -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Roboto+Slab:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Roboto+Slab:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
   <!-- Top Reading Progress Indicator -->
@@ -54,7 +61,7 @@
   <header class="site-header">
     <nav class="navbar" role="navigation" aria-label="Main Navigation">
       <div class="nav-container">
-        
+
         <!-- Brand Title: First Name Bold, Last Regular -->
         <a href="#about" class="nav-brand">
           <span class="brand-first">Swaraj</span> Gupta
@@ -72,22 +79,27 @@
           </ul>
 
           <!-- Quick Search Trigger (Ctrl + K) -->
-          <button id="search-trigger" class="action-btn search-btn" aria-label="Search content (Ctrl+K)" title="Quick search (Ctrl+K)">
+          <button id="search-trigger" class="action-btn search-btn" aria-label="Search content (Ctrl+K)"
+            title="Quick search (Ctrl+K)">
             <span class="search-badge">ctrl k</span>
-            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
           </button>
 
           <!-- Theme Toggle Button -->
-          <button id="theme-toggle" class="action-btn theme-btn" aria-label="Toggle light and dark theme" title="Toggle theme">
+          <button id="theme-toggle" class="action-btn theme-btn" aria-label="Toggle light and dark theme"
+            title="Toggle theme">
             <!-- Moon Icon (for Light mode) -->
-            <svg id="moon-icon" class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg id="moon-icon" class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
             <!-- Sun Icon (for Dark mode) -->
-            <svg id="sun-icon" class="theme-icon" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg id="sun-icon" class="theme-icon" style="display: none;" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="5"></circle>
               <line x1="12" y1="1" x2="12" y2="3"></line>
               <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -101,8 +113,10 @@
           </button>
 
           <!-- Mobile Hamburger Toggle -->
-          <button id="mobile-toggle" class="action-btn mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
-            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <button id="mobile-toggle" class="action-btn mobile-menu-btn" aria-label="Toggle mobile menu"
+            aria-expanded="false">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
               <line x1="3" y1="6" x2="21" y2="6"></line>
               <line x1="3" y1="12" x2="21" y2="12"></line>
               <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -133,7 +147,7 @@
          1. ABOUT SECTION (Signature Asymmetric Split Hero)
          ========================================================================= -->
     <section id="about" class="section about-section">
-      
+
       <header class="section-header">
         <h1 class="hero-name"><span class="font-bold">Swaraj</span> Gupta</h1>
         <p class="hero-subtitle">AI Engineer &amp; Distributed Systems Architect | Ex-Ericsson | MTech AIS @ NUS-ISS</p>
@@ -141,23 +155,30 @@
 
       <!-- Widescreen Hero Cover Photo Banner -->
       <div class="hero-cover-wrapper">
-        <img src="assets/img/CoverPhoto.webp" alt="Swaraj Gupta Portfolio Cover Banner" class="hero-cover-img" loading="eager">
+        <img src="assets/img/CoverPhoto.webp" alt="Swaraj Gupta Portfolio Cover Banner" class="hero-cover-img"
+          loading="eager">
       </div>
 
       <div class="about-grid">
-        
+
         <!-- Left: Narrative Bio & Interests -->
         <div class="about-content">
           <p class="bio-lead">
-            Hi there, I'm <strong>Swaraj Gupta</strong>! I am an AI Engineer and Systems Architect currently pursuing my <strong>Master of Technology in Artificial Intelligence Systems (MTech AIS)</strong> at the <strong>National University of Singapore (NUS-ISS)</strong>.
+            Hi there, I'm <strong>Swaraj Gupta</strong>! I am an AI Engineer and Systems Architect currently pursuing my
+            <strong>Master of Technology in Artificial Intelligence Systems (MTech AIS)</strong> at the <strong>National
+              University of Singapore (NUS-ISS)</strong>.
           </p>
 
           <p class="bio-text">
-            Previously, I spent 4 years building enterprise distributed platforms at <strong>Ericsson</strong>, progressing across Big Data Engineering, Cloud-Native architecture, and MLOps. My work centers on architecting resilient, production-grade intelligence: operationalizing LLM agentic workflows (RAG, ReAct, MCP), designing automated champion/challenger model registries, and scaling microservices on <strong>Kubernetes (CKAD certified)</strong>.
+            Previously, I spent 4 years building enterprise distributed platforms at <strong>Ericsson</strong>,
+            progressing across Big Data Engineering, Cloud-Native architecture, and MLOps. My work centers on
+            architecting resilient, production-grade intelligence: operationalizing LLM agentic workflows (RAG, ReAct,
+            MCP), and scaling microservices applications.
           </p>
 
           <p class="bio-text">
-            I am driven by creating mathematically grounded, explainable, and production-hardened AI solutions that bridge raw deep learning models with resilient, high-throughput cloud infrastructure.
+            <strong>I am driven by creating mathematically grounded, explainable, secure and production-hardened AI
+              solutions.</strong>
           </p>
 
           <!-- Quick Research & Engineering Focus Areas -->
@@ -166,15 +187,18 @@
             <ul class="focus-list">
               <li>
                 <span class="focus-bullet">&bull;</span>
-                <div><strong>Agentic AI &amp; Advanced Reasoning:</strong> Deterministic LLM tool calling, multi-agent goal decomposition, ReAct execution loops, and structured state machines.</div>
+                <div><strong>Agentic AI &amp; Advanced Reasoning:</strong> Deterministic LLM tool calling, multi-agent
+                  goal decomposition, ReAct execution loops, and structured state machines.</div>
               </li>
               <li>
                 <span class="focus-bullet">&bull;</span>
-                <div><strong>Cloud-Native Big Data &amp; MLOps:</strong> Kubernetes orchestration (CKAD), distributed PySpark processing, automated model registries, and sub-millisecond real-time serving.</div>
+                <div><strong>Cloud-Native Big Data &amp; MLOps:</strong> Kubernetes orchestration (CKAD), distributed
+                  PySpark processing, automated model registries, and sub-millisecond real-time serving.</div>
               </li>
               <li>
                 <span class="focus-bullet">&bull;</span>
-                <div><strong>Explainable &amp; Responsible AI (XAI):</strong> Model governance, SHAP value feature attribution, algorithmic fairness auditing, and acoustic digital signal processing.</div>
+                <div><strong>Explainable &amp; Responsible AI (XAI):</strong> Model governance, SHAP value feature
+                  attribution, algorithmic fairness auditing, and acoustic digital signal processing.</div>
               </li>
             </ul>
           </div>
@@ -188,37 +212,46 @@
                   <tr>
                     <th scope="row" class="news-date">2026</th>
                     <td class="news-content">
-                      Commenced Master of Technology in Artificial Intelligence Systems (MTech AIS) at <strong>National University of Singapore (NUS-ISS)</strong>.
+                      Commenced Master of Technology in Artificial Intelligence Systems (MTech AIS) at <strong>National
+                        University of Singapore (NUS-ISS)</strong>.
                     </td>
                   </tr>
                   <tr>
                     <th scope="row" class="news-date">2025</th>
                     <td class="news-content">
-                      Open-sourced <a href="https://github.com/s3arajgupta/App-MLOps-Experiment-Tracking-Model-Registry" target="_blank" rel="noopener noreferrer">MLTracker</a>, an enterprise MLOps experiment tracking and model governance platform.
+                      Open-sourced <a href="https://github.com/s3arajgupta/App-MLOps-Experiment-Tracking-Model-Registry"
+                        target="_blank" rel="noopener noreferrer">MLTracker</a>, an enterprise MLOps experiment tracking
+                      and model governance platform.
                     </td>
                   </tr>
                   <tr>
                     <th scope="row" class="news-date">2024</th>
                     <td class="news-content">
-                      Earned <strong>Certified Kubernetes Application Developer (CKAD)</strong> from CNCF &amp; The Linux Foundation, and <strong>SnowPro Core Certification</strong> from <a href="https://achieve.snowflake.com/cfff6e39-1679-40b6-ac65-2fceaf2afc6f#acc.1Vet9lxS" target="_blank" rel="noopener noreferrer">Snowflake</a>.
+                      Earned <strong>Certified Kubernetes Application Developer (CKAD)</strong> from CNCF &amp; The
+                      Linux Foundation, and <strong>SnowPro Core Certification</strong> from <a
+                        href="https://achieve.snowflake.com/cfff6e39-1679-40b6-ac65-2fceaf2afc6f#acc.1Vet9lxS"
+                        target="_blank" rel="noopener noreferrer">Snowflake</a>.
                     </td>
                   </tr>
                   <tr>
                     <th scope="row" class="news-date">2024</th>
                     <td class="news-content">
-                      Engineered high-throughput cloud-native telemetry ingestion and MLOps platforms at <strong>Ericsson</strong>.
+                      Engineered high-throughput cloud-native telemetry ingestion and MLOps platforms at
+                      <strong>Ericsson</strong>.
                     </td>
                   </tr>
                   <tr>
                     <th scope="row" class="news-date">2022</th>
                     <td class="news-content">
-                      Awarded <strong>1st Place Winner</strong> at Samsung R&amp;D PRISM Hackathon among 200+ teams PAN India for voice and acoustic deep learning models.
+                      Awarded <strong>1st Place Winner</strong> at Samsung R&amp;D PRISM Hackathon among 200+ teams PAN
+                      India for voice and acoustic deep learning models.
                     </td>
                   </tr>
                   <tr>
                     <th scope="row" class="news-date">2021</th>
                     <td class="news-content">
-                      Selected as a <strong>Mitacs Globalink Research Intern</strong> at &Eacute;TS Montr&eacute;al (Canada) conducting data science research.
+                      Selected as a <strong>Mitacs Globalink Research Intern</strong> at &Eacute;TS Montr&eacute;al
+                      (Canada) conducting data science research.
                     </td>
                   </tr>
                 </tbody>
@@ -231,15 +264,20 @@
         <!-- Right: Profile Card (Photo + Contact Info + Social Badges) -->
         <aside class="profile-sidebar">
           <div class="profile-card">
-            
+
             <!-- Official Certification Badges Showcase (Replacing Profile Picture) -->
             <div class="profile-badges-wrapper">
-              <a href="https://www.credly.com/badges/3d47daea-5379-44ac-b1ad-9116fe505e3d" target="_blank" rel="noopener noreferrer" class="profile-badge-link" title="Verify CKAD (CNCF) Certification on Credly">
-                <img src="assets/img/Badge CKAD.png" alt="CKAD Certified Kubernetes Application Developer" class="profile-badge-img">
+              <a href="https://www.credly.com/badges/3d47daea-5379-44ac-b1ad-9116fe505e3d" target="_blank"
+                rel="noopener noreferrer" class="profile-badge-link" title="Verify CKAD (CNCF) Certification on Credly">
+                <img src="assets/img/Badge CKAD.png" alt="CKAD Certified Kubernetes Application Developer"
+                  class="profile-badge-img">
                 <span class="profile-badge-caption">CKAD (CNCF)</span>
               </a>
-              <a href="https://achieve.snowflake.com/cfff6e39-1679-40b6-ac65-2fceaf2afc6f#acc.1Vet9lxS" target="_blank" rel="noopener noreferrer" class="profile-badge-link" title="Verify Snowflake SnowPro Core Certification">
-                <img src="assets/img/Badge SnowPro Core.png" alt="Snowflake SnowPro Core Certified" class="profile-badge-img">
+              <a href="https://achieve.snowflake.com/cfff6e39-1679-40b6-ac65-2fceaf2afc6f#acc.1Vet9lxS" target="_blank"
+                rel="noopener noreferrer" class="profile-badge-link"
+                title="Verify Snowflake SnowPro Core Certification">
+                <img src="assets/img/Badge SnowPro Core.png" alt="Snowflake SnowPro Core Certified"
+                  class="profile-badge-img">
                 <span class="profile-badge-caption">SnowPro Core</span>
               </a>
             </div>
@@ -247,43 +285,81 @@
             <!-- Profile Meta / Details -->
             <div class="profile-meta">
               <div class="meta-row">
-                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
                 <a href="mailto:swaraj.gupta217@gmail.com" class="meta-link">swaraj.gupta217@gmail.com</a>
               </div>
               <div class="meta-row">
-                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
                 <span>Singapore</span>
               </div>
               <div class="meta-row">
-                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
                 <span>MTech AIS @ NUS-ISS</span>
               </div>
               <div class="meta-row">
-                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <a href="https://www.credly.com/badges/3d47daea-5379-44ac-b1ad-9116fe505e3d" target="_blank" rel="noopener noreferrer" class="meta-link">CKAD Certified (2024&ndash;27)</a>
+                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <a href="https://www.credly.com/badges/3d47daea-5379-44ac-b1ad-9116fe505e3d" target="_blank"
+                  rel="noopener noreferrer" class="meta-link">CKAD Certified (2024&ndash;27)</a>
               </div>
               <div class="meta-row">
-                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <a href="https://achieve.snowflake.com/cfff6e39-1679-40b6-ac65-2fceaf2afc6f#acc.1Vet9lxS" target="_blank" rel="noopener noreferrer" class="meta-link">SnowPro Core (Snowflake)</a>
+                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <a href="https://achieve.snowflake.com/cfff6e39-1679-40b6-ac65-2fceaf2afc6f#acc.1Vet9lxS"
+                  target="_blank" rel="noopener noreferrer" class="meta-link">SnowPro Core (Snowflake)</a>
               </div>
             </div>
 
             <!-- Social Media Icons Bar -->
             <div class="social-links-bar" aria-label="Social connections">
-              <a href="https://github.com/s3arajgupta" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <a href="https://github.com/s3arajgupta" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
               </a>
-              <a href="https://linkedin.com/in/s3arajgupta" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <a href="https://linkedin.com/in/s3arajgupta" target="_blank" rel="noopener noreferrer"
+                class="social-icon-btn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
               </a>
-              <a href="https://leetcode.com/u/s3arajgupta/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LeetCode Profile">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.074 5.074 0 0 0-3.79-1.455c-1.413 0-2.766.574-3.79 1.597l-4.319 4.38A5.36 5.36 0 0 0 2 14.306c0 1.413.574 2.766 1.597 3.79l4.332 4.363c1.024 1.024 2.377 1.597 3.79 1.597 1.413 0 2.766-.573 3.79-1.597l2.609-2.636c.514-.514.496-1.365-.039-1.901-.535-.535-1.386-.553-1.9.038zM20.811 13.01H10.666c-.732 0-1.333.6-1.333 1.333s.601 1.333 1.333 1.333h10.145c.732 0 1.333-.6 1.333-1.333s-.601-1.333-1.333-1.333z"/></svg>
+              <a href="https://leetcode.com/u/s3arajgupta/" target="_blank" rel="noopener noreferrer"
+                class="social-icon-btn" title="LeetCode Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.074 5.074 0 0 0-3.79-1.455c-1.413 0-2.766.574-3.79 1.597l-4.319 4.38A5.36 5.36 0 0 0 2 14.306c0 1.413.574 2.766 1.597 3.79l4.332 4.363c1.024 1.024 2.377 1.597 3.79 1.597 1.413 0 2.766-.573 3.79-1.597l2.609-2.636c.514-.514.496-1.365-.039-1.901-.535-.535-1.386-.553-1.9.038zM20.811 13.01H10.666c-.732 0-1.333.6-1.333 1.333s.601 1.333 1.333 1.333h10.145c.732 0 1.333-.6 1.333-1.333s-.601-1.333-1.333-1.333z" />
+                </svg>
               </a>
               <a href="mailto:swaraj.gupta217@gmail.com" class="social-icon-btn" title="Email">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
               </a>
-              <a href="https://x.com/s3arajgupta" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="X (Twitter)">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <a href="https://x.com/s3arajgupta" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                title="X (Twitter)">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
               </a>
             </div>
 
@@ -303,7 +379,7 @@
       </header>
 
       <div class="timeline-container">
-        
+
         <!-- Experience Item 1: Graduate Studies -->
         <article class="timeline-item">
           <div class="timeline-meta">
@@ -314,7 +390,9 @@
             <h3 class="role-title">Graduate Student — MTech Artificial Intelligence Systems</h3>
             <h4 class="company-name">National University of Singapore (NUS-ISS)</h4>
             <p class="role-description">
-              Pursuing advanced graduate research and applied engineering in Artificial Intelligence Systems. Focus areas include multi-agent reasoning graphs, explainable AI architectures (XAI), and reliable agentic workflow design. Actively preparing for industrial attachment in Singapore.
+              Pursuing advanced graduate research and applied engineering in Artificial Intelligence Systems. Focus
+              areas include multi-agent reasoning graphs, explainable AI architectures (XAI), and reliable agentic
+              workflow design. Actively preparing for industrial attachment in Singapore.
             </p>
             <div class="tag-row">
               <span class="pill-tag">AI Systems</span>
@@ -336,7 +414,9 @@
             <h3 class="role-title">Senior Data &amp; Machine Learning Engineer</h3>
             <h4 class="company-name">Ericsson &bull; Big Data, Cloud Native &amp; MLOps Platforms</h4>
             <p class="role-description">
-              4 years of enterprise engineering across high-throughput distributed systems and data pipelines. Designed cloud-native microservices on Kubernetes (CKAD), orchestrated large-scale PySpark data transformation jobs, and productionized automated MLOps pipelines with experiment tracking and model registries.
+              4 years of enterprise engineering across high-throughput distributed systems and data pipelines. Designed
+              cloud-native microservices on Kubernetes (CKAD), orchestrated large-scale PySpark data transformation
+              jobs, and productionized automated MLOps pipelines with experiment tracking and model registries.
             </p>
             <div class="tag-row">
               <span class="pill-tag">Kubernetes (CKAD)</span>
@@ -359,7 +439,9 @@
             <h3 class="role-title">Deep Learning Research Intern</h3>
             <h4 class="company-name">Samsung R&amp;D Institute &bull; PRISM Research Program</h4>
             <p class="role-description">
-              Researched and implemented deep learning models for acoustic intelligence and spoken keyword recognition. Developed digital signal processing (DSP) feature extraction pipelines for low-latency audio classification. Awarded <strong>1st Place Winner Pan-India</strong> among 200+ teams.
+              Researched and implemented deep learning models for acoustic intelligence and spoken keyword recognition.
+              Developed digital signal processing (DSP) feature extraction pipelines for low-latency audio
+              classification. Awarded <strong>1st Place Winner Pan-India</strong> among 200+ teams.
             </p>
             <div class="tag-row">
               <span class="pill-tag">Deep Learning</span>
@@ -380,7 +462,8 @@
             <h3 class="role-title">Mitacs Globalink Research Intern</h3>
             <h4 class="company-name">&Eacute;TS Montr&eacute;al (&Eacute;cole de technologie sup&eacute;rieure)</h4>
             <p class="role-description">
-              Selected for the competitive international Mitacs Globalink research internship. Conducted empirical research in software engineering analytics and applied machine learning on large-scale repository metrics.
+              Selected for the competitive international Mitacs Globalink research internship. Conducted empirical
+              research in software engineering analytics and applied machine learning on large-scale repository metrics.
             </p>
             <div class="tag-row">
               <span class="pill-tag">Data Science</span>
@@ -404,22 +487,36 @@
       </header>
 
       <div class="projects-grid">
-        
+
         <!-- Project 1: MLTracker -->
         <div class="project-card">
           <div class="project-card-header">
             <span class="project-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+              </svg>
             </span>
             <div class="project-header-text">
               <h3 class="project-title">
-                <a href="https://github.com/s3arajgupta/App-MLOps-Experiment-Tracking-Model-Registry" target="_blank" rel="noopener noreferrer">MLTracker Engine</a>
+                <a href="https://github.com/s3arajgupta/App-MLOps-Experiment-Tracking-Model-Registry" target="_blank"
+                  rel="noopener noreferrer">MLTracker Engine</a>
               </h3>
               <span class="project-stars">&#9733; MLOps Platform</span>
             </div>
           </div>
           <p class="project-summary">
-            Enterprise MLOps experiment tracking and model governance platform based on MLflow. Features parent-child nested runs, parallel coordinates loss analysis, an automated Champion/Challenger model registry, and sub-millisecond serving API.
+            Enterprise MLOps experiment tracking and model governance platform based on MLflow. Features parent-child
+            nested runs, parallel coordinates loss analysis, an automated Champion/Challenger model registry, and
+            sub-millisecond serving API.
           </p>
           <div class="project-tags">
             <span class="pill-tag">MLflow</span>
@@ -428,7 +525,8 @@
             <span class="pill-tag">Model Registry</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/s3arajgupta/App-MLOps-Experiment-Tracking-Model-Registry" target="_blank" rel="noopener noreferrer" class="btn btn-sm">GitHub</a>
+            <a href="https://github.com/s3arajgupta/App-MLOps-Experiment-Tracking-Model-Registry" target="_blank"
+              rel="noopener noreferrer" class="btn btn-sm">GitHub</a>
           </div>
         </div>
 
@@ -436,17 +534,25 @@
         <div class="project-card">
           <div class="project-card-header">
             <span class="project-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="23"></line>
+                <line x1="8" y1="23" x2="16" y2="23"></line>
+              </svg>
             </span>
             <div class="project-header-text">
               <h3 class="project-title">
-                <a href="https://github.com/s3arajgupta/App-VoxEmotion-Acoustic-Intelligence-Engine" target="_blank" rel="noopener noreferrer">VoxEmotion Intelligence</a>
+                <a href="https://github.com/s3arajgupta/App-VoxEmotion-Acoustic-Intelligence-Engine" target="_blank"
+                  rel="noopener noreferrer">VoxEmotion Intelligence</a>
               </h3>
               <span class="project-stars">&#9733; Speech DSP &amp; ML</span>
             </div>
           </div>
           <p class="project-summary">
-            Acoustic machine learning &amp; digital signal processing system extracting 180-dimensional acoustic feature vectors (MFCCs, Chroma, Mel Spectrograms) to recognize and classify human emotional states directly from speech audio waveforms.
+            Acoustic machine learning &amp; digital signal processing system extracting 180-dimensional acoustic feature
+            vectors (MFCCs, Chroma, Mel Spectrograms) to recognize and classify human emotional states directly from
+            speech audio waveforms.
           </p>
           <div class="project-tags">
             <span class="pill-tag">Audio DSP</span>
@@ -455,7 +561,8 @@
             <span class="pill-tag">Speech Recognition</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/s3arajgupta/App-VoxEmotion-Acoustic-Intelligence-Engine" target="_blank" rel="noopener noreferrer" class="btn btn-sm">GitHub</a>
+            <a href="https://github.com/s3arajgupta/App-VoxEmotion-Acoustic-Intelligence-Engine" target="_blank"
+              rel="noopener noreferrer" class="btn btn-sm">GitHub</a>
           </div>
         </div>
 
@@ -463,17 +570,23 @@
         <div class="project-card">
           <div class="project-card-header">
             <span class="project-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
             </span>
             <div class="project-header-text">
               <h3 class="project-title">
-                <a href="https://github.com/s3arajgupta/App-XAI-Suite" target="_blank" rel="noopener noreferrer">InterpretAI Suite</a>
+                <a href="https://github.com/s3arajgupta/App-XAI-Suite" target="_blank"
+                  rel="noopener noreferrer">InterpretAI Suite</a>
               </h3>
               <span class="project-stars">&#9733; Explainable AI (XAI)</span>
             </div>
           </div>
           <p class="project-summary">
-            Production Explainable AI &amp; governance platform providing local SHAP waterfall decomposition, Gini MDI importance, permutation feature importance, and automated algorithmic fairness auditing adhering to the Four-Fifths disparate impact rule.
+            Production Explainable AI &amp; governance platform providing local SHAP waterfall decomposition, Gini MDI
+            importance, permutation feature importance, and automated algorithmic fairness auditing adhering to the
+            Four-Fifths disparate impact rule.
           </p>
           <div class="project-tags">
             <span class="pill-tag">SHAP</span>
@@ -482,7 +595,8 @@
             <span class="pill-tag">Scikit-Learn</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/s3arajgupta/App-XAI-Suite" target="_blank" rel="noopener noreferrer" class="btn btn-sm">GitHub</a>
+            <a href="https://github.com/s3arajgupta/App-XAI-Suite" target="_blank" rel="noopener noreferrer"
+              class="btn btn-sm">GitHub</a>
           </div>
         </div>
 
@@ -490,17 +604,23 @@
         <div class="project-card">
           <div class="project-card-header">
             <span class="project-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
             </span>
             <div class="project-header-text">
               <h3 class="project-title">
-                <a href="https://github.com/s3arajgupta/App-Caption-Generation-Using-PyTorch" target="_blank" rel="noopener noreferrer">Vision-Language Captioning</a>
+                <a href="https://github.com/s3arajgupta/App-Caption-Generation-Using-PyTorch" target="_blank"
+                  rel="noopener noreferrer">Vision-Language Captioning</a>
               </h3>
               <span class="project-stars">&#9733; Multimodal Deep Learning</span>
             </div>
           </div>
           <p class="project-summary">
-            Encoder-decoder vision-language neural network pairing deep convolutional feature extraction with recurrent language decoders to generate natural language image descriptions automatically.
+            Encoder-decoder vision-language neural network pairing deep convolutional feature extraction with recurrent
+            language decoders to generate natural language image descriptions automatically.
           </p>
           <div class="project-tags">
             <span class="pill-tag">PyTorch</span>
@@ -509,7 +629,8 @@
             <span class="pill-tag">CNN + RNN</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/s3arajgupta/App-Caption-Generation-Using-PyTorch" target="_blank" rel="noopener noreferrer" class="btn btn-sm">GitHub</a>
+            <a href="https://github.com/s3arajgupta/App-Caption-Generation-Using-PyTorch" target="_blank"
+              rel="noopener noreferrer" class="btn btn-sm">GitHub</a>
           </div>
         </div>
 
@@ -527,17 +648,22 @@
 
       <div class="bibsearch-container">
         <div class="bibsearch-input-wrapper">
-          <svg class="bibsearch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" id="bibsearch-input" class="bibsearch-input" placeholder="Type to filter research by title, keyword, or venue..." aria-label="Filter research">
+          <svg class="bibsearch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="bibsearch-input" class="bibsearch-input"
+            placeholder="Type to filter research by title, keyword, or venue..." aria-label="Filter research">
         </div>
       </div>
 
       <div class="publications-list" id="publications-list">
-        
+
         <h3 class="bibliography-year">Selected Technical Work</h3>
 
         <!-- Item 1: MLTracker Architecture -->
-        <article class="publication-item" data-keywords="mlops model registry experiment tracking mlflow distributed systems">
+        <article class="publication-item"
+          data-keywords="mlops model registry experiment tracking mlflow distributed systems">
           <div class="pub-badge-col">
             <span class="venue-badge">SYSTEMS</span>
           </div>
@@ -555,14 +681,18 @@
             <!-- Action Pill Buttons (Abs, Code, BibTeX) -->
             <div class="pub-links">
               <button class="pub-btn toggle-abstract" aria-expanded="false" data-target="abs-1">Abs</button>
-              <a href="https://github.com/s3arajgupta/App-MLOps-Experiment-Tracking-Model-Registry" target="_blank" rel="noopener noreferrer" class="pub-btn">Code</a>
+              <a href="https://github.com/s3arajgupta/App-MLOps-Experiment-Tracking-Model-Registry" target="_blank"
+                rel="noopener noreferrer" class="pub-btn">Code</a>
               <button class="pub-btn toggle-bibtex" aria-expanded="false" data-target="bib-1">BibTeX</button>
             </div>
 
             <!-- Expandable Abstract Container -->
             <div id="abs-1" class="pub-collapsible pub-abstract-panel" hidden>
               <p>
-                Production machine learning systems require rigorous governance between experimental trial sweeps and real-time production inference. This report details the architectural design of MLTracker, decoupling parent-child hyperparameter search spaces from staging and production model transitions with automated rollback mechanisms, artifact verification, and sub-millisecond point inference serving.
+                Production machine learning systems require rigorous governance between experimental trial sweeps and
+                real-time production inference. This report details the architectural design of MLTracker, decoupling
+                parent-child hyperparameter search spaces from staging and production model transitions with automated
+                rollback mechanisms, artifact verification, and sub-millisecond point inference serving.
               </p>
             </div>
 
@@ -589,7 +719,8 @@
         </article>
 
         <!-- Item 2: Speech Emotion DSP -->
-        <article class="publication-item" data-keywords="audio dsp speech emotion recognition librosa pytorch acoustic prosody">
+        <article class="publication-item"
+          data-keywords="audio dsp speech emotion recognition librosa pytorch acoustic prosody">
           <div class="pub-badge-col">
             <span class="venue-badge">AUDIO ML</span>
           </div>
@@ -606,13 +737,17 @@
 
             <div class="pub-links">
               <button class="pub-btn toggle-abstract" aria-expanded="false" data-target="abs-2">Abs</button>
-              <a href="https://github.com/s3arajgupta/App-VoxEmotion-Acoustic-Intelligence-Engine" target="_blank" rel="noopener noreferrer" class="pub-btn">Code</a>
+              <a href="https://github.com/s3arajgupta/App-VoxEmotion-Acoustic-Intelligence-Engine" target="_blank"
+                rel="noopener noreferrer" class="pub-btn">Code</a>
               <button class="pub-btn toggle-bibtex" aria-expanded="false" data-target="bib-2">BibTeX</button>
             </div>
 
             <div id="abs-2" class="pub-collapsible pub-abstract-panel" hidden>
               <p>
-                Analyzing emotional states from speech independently of language transcripts requires extracting invariant vocal tract geometry and pitch contour features. We demonstrate an efficient 180-dimensional acoustic feature representation combining 40 MFCCs, 12 Chroma semitones, and 128 Mel-scale spectral bands that enables accurate multi-class emotion classification with lightweight sub-second inference.
+                Analyzing emotional states from speech independently of language transcripts requires extracting
+                invariant vocal tract geometry and pitch contour features. We demonstrate an efficient 180-dimensional
+                acoustic feature representation combining 40 MFCCs, 12 Chroma semitones, and 128 Mel-scale spectral
+                bands that enables accurate multi-class emotion classification with lightweight sub-second inference.
               </p>
             </div>
 
@@ -655,13 +790,16 @@
 
             <div class="pub-links">
               <button class="pub-btn toggle-abstract" aria-expanded="false" data-target="abs-3">Abs</button>
-              <a href="https://github.com/s3arajgupta/Name-Calling-SAMSUNG" target="_blank" rel="noopener noreferrer" class="pub-btn">Code</a>
+              <a href="https://github.com/s3arajgupta/Name-Calling-SAMSUNG" target="_blank" rel="noopener noreferrer"
+                class="pub-btn">Code</a>
               <button class="pub-btn toggle-bibtex" aria-expanded="false" data-target="bib-3">BibTeX</button>
             </div>
 
             <div id="abs-3" class="pub-collapsible pub-abstract-panel" hidden>
               <p>
-                Developed deep neural network architectures for spoken name and keyword recognition in noisy acoustic environments under the Samsung PRISM research program. Awarded 1st place in the national hackathon across 200+ engineering teams for high accuracy and compute efficiency.
+                Developed deep neural network architectures for spoken name and keyword recognition in noisy acoustic
+                environments under the Samsung PRISM research program. Awarded 1st place in the national hackathon
+                across 200+ engineering teams for high accuracy and compute efficiency.
               </p>
             </div>
 
@@ -699,18 +837,22 @@
       </header>
 
       <div class="skills-container">
-        
+
         <div class="skill-group">
           <h3 class="skill-category-title">Certifications &amp; Credentials</h3>
           <div class="skill-pills">
-            <a href="https://www.credly.com/badges/3d47daea-5379-44ac-b1ad-9116fe505e3d" target="_blank" rel="noopener noreferrer" class="skill-pill-link" title="Verify CKAD Badge on Credly">
-              <span class="skill-pill badge-pill" style="border-color: var(--accent); color: var(--accent); font-weight: 600;">
+            <a href="https://www.credly.com/badges/3d47daea-5379-44ac-b1ad-9116fe505e3d" target="_blank"
+              rel="noopener noreferrer" class="skill-pill-link" title="Verify CKAD Badge on Credly">
+              <span class="skill-pill badge-pill"
+                style="border-color: var(--accent); color: var(--accent); font-weight: 600;">
                 <img src="assets/img/Badge CKAD.png" alt="CKAD Badge" class="pill-badge-icon">
                 CKAD: Certified Kubernetes Application Developer (CNCF &bull; 2024&ndash;2027)
               </span>
             </a>
-            <a href="https://achieve.snowflake.com/cfff6e39-1679-40b6-ac65-2fceaf2afc6f#acc.1Vet9lxS" target="_blank" rel="noopener noreferrer" class="skill-pill-link" title="Verify Snowflake SnowPro Core Credential">
-              <span class="skill-pill badge-pill" style="border-color: #29b5e8; color: var(--text-primary); font-weight: 600;">
+            <a href="https://achieve.snowflake.com/cfff6e39-1679-40b6-ac65-2fceaf2afc6f#acc.1Vet9lxS" target="_blank"
+              rel="noopener noreferrer" class="skill-pill-link" title="Verify Snowflake SnowPro Core Credential">
+              <span class="skill-pill badge-pill"
+                style="border-color: #29b5e8; color: var(--text-primary); font-weight: 600;">
                 <img src="assets/img/Badge SnowPro Core.png" alt="SnowPro Badge" class="pill-badge-icon">
                 SnowPro Core Certified (Snowflake)
               </span>
@@ -773,7 +915,9 @@
 
       <div class="contact-box">
         <p class="contact-intro">
-          I am actively seeking <strong>mid-to-senior AI Engineering / Platform roles in Singapore</strong> (Full-time starting August 2027 with EP sponsorship, or credit-bearing 20+ week Industrial Attachment starting March 2027). Feel free to reach out directly:
+          I am actively seeking <strong>mid-to-senior AI Engineering / Platform roles in Singapore</strong> (Full-time
+          starting August 2027 with EP sponsorship, or credit-bearing 20+ week Industrial Attachment starting March
+          2027). Feel free to reach out directly:
         </p>
 
         <div class="contact-methods">
@@ -783,15 +927,18 @@
           </div>
           <div class="contact-entry">
             <span class="contact-kind">LinkedIn:</span>
-            <a href="https://linkedin.com/in/s3arajgupta" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/s3arajgupta</a>
+            <a href="https://linkedin.com/in/s3arajgupta" target="_blank" rel="noopener noreferrer"
+              class="contact-value">linkedin.com/in/s3arajgupta</a>
           </div>
           <div class="contact-entry">
             <span class="contact-kind">GitHub:</span>
-            <a href="https://github.com/s3arajgupta" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/s3arajgupta</a>
+            <a href="https://github.com/s3arajgupta" target="_blank" rel="noopener noreferrer"
+              class="contact-value">github.com/s3arajgupta</a>
           </div>
           <div class="contact-entry">
             <span class="contact-kind">LeetCode:</span>
-            <a href="https://leetcode.com/u/s3arajgupta/" target="_blank" rel="noopener noreferrer" class="contact-value">leetcode.com/u/s3arajgupta</a>
+            <a href="https://leetcode.com/u/s3arajgupta/" target="_blank" rel="noopener noreferrer"
+              class="contact-value">leetcode.com/u/s3arajgupta</a>
           </div>
           <div class="contact-entry">
             <span class="contact-kind">Location:</span>
@@ -813,7 +960,8 @@
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
-        <input type="text" id="modal-search-input" placeholder="Type to search experience, projects, skills, research..." autocomplete="off">
+        <input type="text" id="modal-search-input"
+          placeholder="Type to search experience, projects, skills, research..." autocomplete="off">
         <button id="close-search-btn" class="close-search-btn" aria-label="Close search">
           <kbd>ESC</kbd>
         </button>
@@ -835,11 +983,15 @@
   <footer class="site-footer">
     <div class="footer-container">
       <p class="footer-copyright">
-        &copy; 2026 <strong>Swaraj Gupta</strong>. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
+        &copy; 2026 <strong>Swaraj Gupta</strong>. Hosted by <a href="https://pages.github.com/" target="_blank"
+          rel="noopener noreferrer">GitHub Pages</a>.
       </p>
       <div class="footer-back-to-top">
         <a href="#about" class="back-to-top-link">
-          Back to top <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+          Back to top <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
         </a>
       </div>
     </div>
@@ -847,4 +999,5 @@
 
   <script src="assets/js/script.js" defer></script>
 </body>
+
 </html>
