@@ -192,22 +192,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Search Index Data (Accurately indexed from GitHub and LinkedIn profile)
   const searchIndex = [
-    { title: 'About Swaraj Gupta', subtitle: 'AI Engineer & Distributed Systems Architect | NUS-ISS & Ex-Ericsson', url: '#about', keywords: 'swaraj gupta bio about nus iss ericsson ai systems architect' },
+    { title: 'About Swaraj Gupta', subtitle: 'AI Engineer & Distributed Systems Architect | NUS & Ex-Ericsson', url: '#about', keywords: 'swaraj gupta bio about nus ericsson ai systems architect' },
+    { title: 'Resume / Curriculum Vitae', subtitle: 'Download Swaraj Gupta Resume (PDF)', url: 'assets/Swaraj_Gupta_Resume.pdf', keywords: 'resume cv curriculum vitae pdf download credentials swaraj gupta' },
     { title: 'Core Focus & Interests', subtitle: 'Agentic AI, Cloud-Native Big Data, MLOps & Explainable AI', url: '#about', keywords: 'agentic reasoning llm mlops kubernetes spark xai dsp' },
-    { title: 'Experience: NUS-ISS (MTech AIS)', subtitle: 'Graduate Student in Artificial Intelligence Systems (2026–Present)', url: '#experience', keywords: 'nus iss singapore master ai artificial intelligence systems' },
-    { title: 'Experience: Ericsson', subtitle: 'Senior Data & Machine Learning Engineer — Big Data & MLOps (2022–2026)', url: '#experience', keywords: 'ericsson work experience jobs big data pyspark kubernetes mlops' },
+    { title: 'Experience: Maleo Systems', subtitle: 'Software Engineer Intern — BLOCK71 (2026–Present)', url: '#experience', keywords: 'maleo systems block71 nusx multimodal embeddings aerospace mro edge mobile' },
+    { title: 'Experience: NUS (MTech in AI Systems)', subtitle: 'Graduate Student in Artificial Intelligence Systems (2026–Present)', url: '#experience', keywords: 'nus singapore national university master ai artificial intelligence systems' },
+    { title: 'Experience: Ericsson', subtitle: 'Software Development Engineer — Multi-Agent AI & Big Data (2022–2026)', url: '#experience', keywords: 'ericsson work experience jobs gluehealer big data pyspark kubernetes mlops snowflake' },
     { title: 'Experience: Samsung R&D Institute', subtitle: 'Deep Learning Research Intern — PRISM 1st Place Winner (2022)', url: '#experience', keywords: 'samsung prism hackathon winner deep learning speech audio keyword' },
     { title: 'Experience: ÉTS Montréal', subtitle: 'Mitacs Globalink Research Intern in Data Science (2021)', url: '#experience', keywords: 'mitacs globalink ets montreal canada research intern software analytics' },
-    { title: 'Project: MLTracker Engine', subtitle: 'Enterprise MLOps experiment tracking and model governance platform', url: '#projects', keywords: 'mltracker mlflow python model registry experiment tracking champion challenger' },
-    { title: 'Project: VoxEmotion Intelligence', subtitle: 'Speech DSP & acoustic ML extracting 180D features for emotion classification', url: '#projects', keywords: 'voxemotion audio dsp librosa mfcc pytorch speech emotion' },
-    { title: 'Project: InterpretAI Suite', subtitle: 'Explainable AI platform with SHAP waterfall & algorithmic fairness auditing', url: '#projects', keywords: 'interpretai xai shap explainability fairness disparate impact' },
-    { title: 'Project: Vision-Language Captioning', subtitle: 'Encoder-decoder CNN-RNN neural network for automated image descriptions', url: '#projects', keywords: 'image captioning vision language cnn rnn multimodal pytorch' },
-    { title: 'Research: MLTracker Governance', subtitle: 'Cloud-Native MLOps Technical Report (2025)', url: '#research', keywords: 'research mltracker governance mlops model registry' },
-    { title: 'Research: Speech Emotion DSP', subtitle: 'Acoustic Deep Learning & Signal Processing Report (2024)', url: '#research', keywords: 'research acoustic prosody dsp speech emotion librosa' },
-    { title: 'Research: Samsung PRISM Award Winner', subtitle: 'Acoustic Deep Learning for Spoken Name Recognition (1st / 200+ teams)', url: '#research', keywords: 'research samsung prism award name calling audio deep learning' },
+    { title: 'Project: MarketSense AI', subtitle: 'Multi-Asset Shock Simulator & Portfolio Reasoner with XAI', url: '#projects', keywords: 'marketsense chromadb causal graphs neuro-symbolic finance portfolio ai streamlit' },
+    { title: 'Project: GlueHealer', subtitle: 'Autonomous Self-Healing Agent for AWS Glue (LangGraph)', url: '#projects', keywords: 'gluehealer aws glue langgraph self-healing agentic ai data pipelines etl' },
+    { title: 'Project: AValidate (Audio-Visual Verification)', subtitle: 'Multimodal Audio-Visual Alignment & Sound-Source Verification', url: '#projects', keywords: 'avalidate multimodal audio visual temporal consistency sound source verification pytorch' },
+    { title: 'Project: On-Device Spoken Name Detection', subtitle: 'Samsung PRISM 1st Place Winner (Siamese CNN w/o ASR)', url: '#projects', keywords: 'samsung prism hackathon winner name calling acoustic embeddings siamese cnn librosa' },
+    { title: 'Project: GitHub AR/XR Data Mining', subtitle: 'Empirical Software Engineering & XR Artifacts Mining (Mitacs Globalink)', url: '#projects', keywords: 'mitacs globalink ets montreal ar xr extended reality graphql data mining' },
     { title: 'Certification: CKAD (CNCF)', subtitle: 'Certified Kubernetes Application Developer (Valid 2024–2027)', url: '#skills', keywords: 'ckad certified kubernetes application developer cncf linux foundation' },
     { title: 'Certification: SnowPro Core (Snowflake)', subtitle: 'Snowflake Certified Core Professional', url: '#skills', keywords: 'snowpro core snowflake cloud data warehouse cert credentials' },
-    { title: 'Skills: AI, ML & MLOps', subtitle: 'Autonomous Agents, PyTorch, MLflow, Audio DSP, SHAP', url: '#skills', keywords: 'skills ai ml pytorch mlops mlflow librosa shap' },
+    { title: 'Skills: AI, ML & MLOps', subtitle: 'Autonomous Agents, LangGraph, PyTorch, MLflow, Audio DSP, SHAP', url: '#skills', keywords: 'skills ai ml pytorch mlops mlflow librosa shap langgraph' },
     { title: 'Skills: Cloud-Native & Systems', subtitle: 'Kubernetes (CKAD), Docker, Apache PySpark, Microservices, HLD', url: '#skills', keywords: 'skills kubernetes docker pyspark microservices distributed systems' },
     { title: 'Contact Information', subtitle: 'Singapore, Email, LinkedIn, GitHub, LeetCode', url: '#contact', keywords: 'contact email linkedin github leetcode singapore reach out' }
   ];

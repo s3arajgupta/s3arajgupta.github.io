@@ -1,4 +1,4 @@
-# Swaraj Gupta — Portfolio & Research Website
+# Swaraj Gupta — Portfolio Website
 
 A clean, minimalist personal website for an **AI Engineer & Systems Architect** in **pure, zero-dependency Vanilla HTML, CSS, and JavaScript**.
 
@@ -11,10 +11,11 @@ A clean, minimalist personal website for an **AI Engineer & Systems Architect** 
 - **Zero Build Steps & Zero Dependencies**: Runs directly in any browser with instant GitHub Pages deployment (no Ruby, Jekyll, npm, or bundlers required).
 - **Clean Academic Layout**:
   - Two-column asymmetric hero on the *About* page with floating profile card, contact details, and social icon dock.
+  - One-click **Resume Download (PDF)** integrated into the profile sidebar, navigation bar, and contact section.
   - Interactive **News / Latest Updates** timeline table.
-  - Signature **Publications & Technical Papers** section with conference badges (`ICLR`, `ARXIV`, `SYS`), expandable `Abs` abstract panels, and expandable `BibTeX` citations with a **one-click copy button**.
-  - Real-time **BibSearch filter** to search publications by keyword on the fly.
-  - Project repository showcase cards with technology tags.
+  - **Professional Experience** timeline covering Maleo Systems (BLOCK71), National University of Singapore (NUS), Ericsson, Samsung R&D, and ÉTS Montréal.
+  - **Featured Projects** showcase displaying pinned GitHub repositories with live demo badges and direct repository links.
+  - Comprehensive **Skills & Certifications** categorizing Agentic AI, ML, Big Data, Cloud Infrastructure (CKAD, SnowPro), and Languages.
 - **Interactive Quick Search (`Ctrl + K`)**:
   - Accessible via the top navbar button or pressing <kbd>Ctrl</kbd> + <kbd>K</kbd> / <kbd>Cmd</kbd> + <kbd>K</kbd>.
   - Built with native `<dialog>` for accessibility, full keyboard navigation (<kbd>&uarr;</kbd> / <kbd>&darr;</kbd> / <kbd>Enter</kbd>), and instant section jumping.
@@ -31,16 +32,19 @@ A clean, minimalist personal website for an **AI Engineer & Systems Architect** 
 
 ```text
 s3arajgupta.github.io/
-├── index.html              # Main page markup with semantic sections & search dialog
-├── favicon.svg             # Scalable SVG favicon
+├── index.html                  # Main page markup with semantic sections & search dialog
+├── favicon.ico                 # Favicon
 ├── assets/
+│   ├── Swaraj_Gupta_Resume.pdf # Printable & downloadable resume PDF
 │   ├── css/
-│   │   └── style.css       # Design tokens, typography, dark/light themes & print rules
+│   │   └── style.css           # Design tokens, typography, dark/light themes & print rules
 │   ├── js/
-│   │   └── script.js       # Search modal engine, theme switcher, and accordions
+│   │   └── script.js           # Search modal engine, theme switcher, and scroll tracking
 │   └── img/
-│       └── profile.svg     # Default avatar asset (or your personal photo)
-└── README.md               # Project documentation and editing guide
+│       ├── CoverPhoto.webp     # Hero widescreen banner
+│       ├── Badge CKAD.png      # CNCF CKAD certification badge
+│       └── Badge SnowPro Core.png # Snowflake SnowPro certification badge
+└── README.md                   # Project documentation and editing guide
 ```
 
 ---
@@ -66,76 +70,14 @@ npx serve .
 
 All personal content and structure can be edited directly inside [`index.html`](index.html).
 
-### 1. Changing Your Profile Photo
-1. Place your image (e.g., `profile.jpg`) inside the `assets/img/` folder.
-2. In [`index.html`](index.html), locate `#profile-img` around line 170 and update the `src`:
-   ```html
-   <img id="profile-img" src="assets/img/profile.jpg" alt="Swaraj Gupta" class="profile-img">
-   ```
+### 1. Updating Your Resume / CV
+1. Replace [`assets/Swaraj_Gupta_Resume.pdf`](assets/Swaraj_Gupta_Resume.pdf) with your updated PDF resume.
+2. The site automatically provides download links in the profile sidebar, navigation bar, and contact section.
 
 ---
 
-### 2. Adding a New Publication / Paper
-Find `<div class="publications-list">` in [`index.html`](index.html) and copy-paste this block:
-
-```html
-<article class="publication-item" data-keywords="agents reasoning orchestration iclr 2025">
-  <div class="pub-badge-col">
-    <span class="venue-badge">ICLR</span>
-  </div>
-  <div class="pub-details-col">
-    <h4 class="pub-title">
-      Your Paper or Architecture Title
-    </h4>
-    <div class="pub-authors">
-      <strong>Swaraj Gupta</strong>, and Co-Author Name
-    </div>
-    <div class="pub-periodical">
-      <em>Conference Name / Journal</em>, 2025
-    </div>
-
-    <!-- Action Buttons -->
-    <div class="pub-links">
-      <button class="pub-btn toggle-abstract" aria-expanded="false" data-target="abs-new">Abs</button>
-      <a href="https://arxiv.org/abs/..." target="_blank" rel="noopener noreferrer" class="pub-btn">PDF</a>
-      <a href="https://github.com/s3arajgupta/repo" target="_blank" rel="noopener noreferrer" class="pub-btn">Code</a>
-      <button class="pub-btn toggle-bibtex" aria-expanded="false" data-target="bib-new">BibTeX</button>
-    </div>
-
-    <!-- Abstract Panel -->
-    <div id="abs-new" class="pub-collapsible pub-abstract-panel" hidden>
-      <p>
-        Your paper abstract goes here. Describe the core methodology, benchmark results, and engineering implications.
-      </p>
-    </div>
-
-    <!-- BibTeX Panel -->
-    <div id="bib-new" class="pub-collapsible pub-bibtex-panel" hidden>
-      <div class="bibtex-header">
-        <span>BibTeX</span>
-        <button class="copy-bibtex-btn" data-clipboard="@article{gupta2025title,
-  title={Your Paper Title},
-  author={Gupta, Swaraj},
-  journal={Conference},
-  year={2025}
-}">Copy</button>
-      </div>
-      <pre class="bibtex-code"><code>@article{gupta2025title,
-  title={Your Paper Title},
-  author={Gupta, Swaraj},
-  journal={Conference},
-  year={2025}
-}</code></pre>
-    </div>
-
-  </div>
-</article>
-```
-*Note: Ensure the `data-target` on the buttons matches the `id` of the collapsible panels (`abs-new` and `bib-new`).*
-
----
-
-### 3. Adding a Featured Project
+### 2. Adding a Featured Project
+Find `<div class="projects-grid">` in [`index.html`](index.html) and add:
 Find `<div class="projects-grid">` in [`index.html`](index.html) and add:
 
 ```html
@@ -170,12 +112,12 @@ Find `<div class="projects-grid">` in [`index.html`](index.html) and add:
 
 ---
 
-### 4. Updating News / Latest Updates
+### 3. Updating News / Latest Updates
 In [`index.html`](index.html), find `<table class="news-table">` and add a row:
 
 ```html
 <tr>
-  <th scope="row" class="news-date">2025</th>
+  <th scope="row" class="news-date">2026</th>
   <td class="news-content">
     Your milestone, announcement, or paper acceptance here.
   </td>
@@ -184,7 +126,7 @@ In [`index.html`](index.html), find `<table class="news-table">` and add a row:
 
 ---
 
-### 5. Customizing Ctrl + K Quick Search Index
+### 4. Customizing Ctrl + K Quick Search Index
 To add custom search results to the search modal, open [`assets/js/script.js`](assets/js/script.js) and update the `searchIndex` array:
 
 ```javascript
