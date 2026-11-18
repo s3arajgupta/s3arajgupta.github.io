@@ -26,13 +26,110 @@
 
 ---
 
-### ⚡ Current Orbit
+### 📂 Featured Flagship Projects
 
-- 🔭 **Industry Work:** Software Engineer Intern (Part-time) at **Maleo Systems (BLOCK71 / NUSX)**, developing multimodal feature-fusion pipelines (geometric, object-level, and material-grade embeddings) for real-time aerospace MRO scrap classification across edge, mobile, and web.
-- 🎓 **Graduate Research:** Completing **Master of Technology in AI Systems** at **National University of Singapore (NUS)**, specializing in reliable AI agents, explainable AI (XAI), and multi-modal alignment.
-- 💼 **Enterprise Track Record:** 4 years as Software Development Engineer at **Ericsson**, building distributed Big Data pipelines, Snowflake ELT platforms, and autonomous MLOps workflows.
-- 🏆 **Hackathons & Honors:** **1st Place Winner** (out of 220+ teams) in Samsung PRISM All-India Deep Learning Hackathon & **Mitacs Globalink Scholar** (&Eacute;TS Montréal).
-- 🎯 **Looking Ahead:** Actively seeking **AI Engineering / Distributed Systems roles in Singapore** (Full-time from Aug 2027 with EP sponsorship / 20+ week Industrial Attachment from Mar 2027).
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">🩹 <a href="https://github.com/s3arajgupta/App-GlueHealer">GlueHealer</a></h3>
+      <p align="center">
+        <a href="https://gluehealer.streamlit.app" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Live Demo" />
+        </a>
+        &nbsp;
+        <a href="https://github.com/s3arajgupta/App-GlueHealer">
+          <img src="https://img.shields.io/github/stars/s3arajgupta/App-GlueHealer?style=flat-square&logo=github&label=Stars&color=blue" alt="Stars" />
+        </a>
+        &nbsp;
+        <a href="https://github.com/s3arajgupta/App-GlueHealer">
+          <img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github&logoColor=white" alt="Code" />
+        </a>
+      </p>
+      <p>Autonomous self-healing agentic AI system powered by <b>LangGraph state machines</b> that diagnoses, patches, and recovers failing AWS Glue ETL jobs with human-in-the-loop approvals and cyclic feedback. Adopted across <b>250+ data engineers</b> at Ericsson.</p>
+      <p><code>LangGraph</code> • <code>AWS Glue</code> • <code>Agentic AI</code> • <code>Streamlit</code> • <code>Python</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">📈 <a href="https://github.com/s3arajgupta/MarketSense">MarketSense AI</a></h3>
+      <p align="center">
+        <a href="https://marketsense-ai-nus.streamlit.app/" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/Live%20App-Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Live App" />
+        </a>
+        &nbsp;
+        <a href="https://youtu.be/Oq-QEI3UvJw" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/Intro-YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="Intro Video" />
+        </a>
+        &nbsp;
+        <a href="https://youtu.be/l_06wWVMz8U" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/Design-YouTube-2EA44F?style=flat-square&logo=youtube&logoColor=white" alt="Design Video" />
+        </a>
+        <br/>
+        <a href="https://github.com/s3arajgupta/MarketSense">
+          <img src="https://img.shields.io/github/stars/s3arajgupta/MarketSense?style=flat-square&logo=github&label=Stars&color=blue" alt="Stars" />
+        </a>
+        &nbsp;
+        <a href="https://github.com/s3arajgupta/MarketSense">
+          <img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github&logoColor=white" alt="Code" />
+        </a>
+      </p>
+      <p>Neuro-symbolic intelligent reasoning simulator leveraging <b>ChromaDB and explainable causal graphs</b> across 22 macroeconomic crises to achieve sub-second grounded retrieval latency and dynamic portfolio adaptability.</p>
+      <p><code>ChromaDB</code> • <code>Causal Graphs</code> • <code>Neuro-Symbolic</code> • <code>Streamlit</code> • <code>XAI</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">👁️🎧 <a href="https://github.com/NUS-AIS-GCs/Audio-Video-Confidence">AValidate</a></h3>
+      <p align="center">
+        <a href="https://youtu.be/2_Hi2w5IPbE" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/Video%20Demo-YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="Video Demo" />
+        </a>
+        &nbsp;
+        <a href="https://github.com/NUS-AIS-GCs/Audio-Video-Confidence">
+          <img src="https://img.shields.io/github/stars/NUS-AIS-GCs/Audio-Video-Confidence?style=flat-square&logo=github&label=Stars&color=blue" alt="Stars" />
+        </a>
+        &nbsp;
+        <a href="https://github.com/NUS-AIS-GCs/Audio-Video-Confidence">
+          <img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github&logoColor=white" alt="Code" />
+        </a>
+      </p>
+      <p>Cross-modal audio-visual sound-source verification engine matching acoustic and visual sources at 1-second temporal resolution across 28 categories with three prediction heads for temporal presence and soundtrack authentication.</p>
+      <p><code>PyTorch</code> • <code>Multimodal AI</code> • <code>Audio-Visual DSP</code> • <code>Temporal Alignment</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">🎙️ <a href="https://github.com/s3arajgupta/Hackathon-SAMSUNG-Name-Calling">On-Device Spoken Name Detection</a></h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Samsung%20PRISM-1st%20Place%20(1%2F220%2B)-1428A0?style=flat-square&logo=samsung&logoColor=white" alt="1st Place" />
+        &nbsp;
+        <a href="https://github.com/s3arajgupta/Hackathon-SAMSUNG-Name-Calling">
+          <img src="https://img.shields.io/github/stars/s3arajgupta/Hackathon-SAMSUNG-Name-Calling?style=flat-square&logo=github&label=Stars&color=blue" alt="Stars" />
+        </a>
+        &nbsp;
+        <a href="https://github.com/s3arajgupta/Hackathon-SAMSUNG-Name-Calling">
+          <img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github&logoColor=white" alt="Code" />
+        </a>
+      </p>
+      <p>Zero-ASR Siamese Twin CNN & Librosa Mel-spectrogram extraction producing robust acoustic embeddings on 1,260+ samples for spoken keyword detection in noisy environments.</p>
+      <p><code>TensorFlow / Keras</code> • <code>Librosa</code> • <code>Audio DSP</code> • <code>Siamese CNN</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <h3 align="center">🌐 <a href="https://github.com/s3arajgupta/Research-MITACS-GitHub-AR-Artifacts-Data-Mining">GitHub AR/XR Artifacts Data Mining</a></h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Mitacs-Globalink%20Research%20Award-E31837?style=flat-square&logo=canva&logoColor=white" alt="Mitacs Award" />
+        &nbsp;
+        <a href="https://github.com/s3arajgupta/Research-MITACS-GitHub-AR-Artifacts-Data-Mining">
+          <img src="https://img.shields.io/github/stars/s3arajgupta/Research-MITACS-GitHub-AR-Artifacts-Data-Mining?style=flat-square&logo=github&label=Stars&color=blue" alt="Stars" />
+        </a>
+        &nbsp;
+        <a href="https://github.com/s3arajgupta/Research-MITACS-GitHub-AR-Artifacts-Data-Mining">
+          <img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github&logoColor=white" alt="Code" />
+        </a>
+      </p>
+      <p align="center">GraphQL-based web mining crawlers and empirical software analytics engine extracting 40,000+ Extended Reality (XR) artifacts from GitHub and Stack Overflow with rate-limit optimization and an XR recommendation system.</p>
+      <p align="center"><code>JavaScript</code> • <code>Node.js</code> • <code>GitHub GraphQL API</code> • <code>Empirical Data Mining</code></p>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -57,82 +154,6 @@
 <a href="https://achieve.snowflake.com/cfff6e39-1679-40b6-ac65-2fceaf2afc6f#acc.1Vet9lxS" target="_blank" rel="noopener noreferrer">
   <img src="https://img.shields.io/badge/Snowflake-SnowPro%20Core%20Certified%20(2025--2027)-29B5E8?style=flat-square&logo=snowflake&logoColor=white" alt="SnowPro Verification" />
 </a>
-
-</div>
-
----
-
-### 📂 Featured Flagship Projects
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="center">🩹 <a href="https://github.com/s3arajgupta/App-GlueHealer">GlueHealer</a></h3>
-      <p align="center">
-        <a href="https://gluehealer.streamlit.app"><img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Live Demo" /></a>
-        <a href="https://github.com/s3arajgupta/App-GlueHealer"><img src="https://img.shields.io/badge/GitHub-Repo-181717?logo=github" alt="Repo" /></a>
-      </p>
-      <p>Autonomous self-healing agentic AI system powered by <b>LangGraph state machines</b> that diagnoses, patches, and recovers failing AWS Glue ETL jobs with human-in-the-loop approvals and cyclic feedback. Adopted across <b>250+ data engineers</b> at Ericsson.</p>
-      <p><code>LangGraph</code> • <code>AWS Glue</code> • <code>Agentic AI</code> • <code>Streamlit</code> • <code>Python</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="center">📈 <a href="https://github.com/s3arajgupta/MarketSense">MarketSense AI</a></h3>
-      <p align="center">
-        <a href="https://marketsense-ai-nus.streamlit.app/"><img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Live App" /></a>
-        <a href="https://youtu.be/Oq-QEI3UvJw"><img src="https://img.shields.io/badge/YouTube-Intro%20Video-FF0000?logo=youtube&logoColor=white" alt="Intro Video" /></a>
-        <a href="https://youtu.be/l_06wWVMz8U"><img src="https://img.shields.io/badge/YouTube-Design%20Video-2EA44F?logo=youtube&logoColor=white" alt="Design Video" /></a>
-        <a href="https://github.com/s3arajgupta/MarketSense"><img src="https://img.shields.io/badge/GitHub-Repo-181717?logo=github" alt="Repo" /></a>
-      </p>
-      <p>Neuro-symbolic intelligent reasoning simulator leveraging <b>ChromaDB and explainable causal graphs</b> across 22 macroeconomic crises to achieve sub-second grounded retrieval latency and dynamic portfolio adaptability.</p>
-      <p><code>ChromaDB</code> • <code>Causal Graphs</code> • <code>Neuro-Symbolic</code> • <code>Streamlit</code> • <code>XAI</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="center">👁️🎧 <a href="https://github.com/NUS-AIS-GCs/Audio-Video-Confidence">AValidate</a></h3>
-      <p align="center">
-        <a href="https://youtu.be/2_Hi2w5IPbE"><img src="https://img.shields.io/badge/YouTube-Video%20Demo-FF0000?logo=youtube&logoColor=white" alt="Video Demo" /></a>
-        <a href="https://github.com/NUS-AIS-GCs/Audio-Video-Confidence"><img src="https://img.shields.io/badge/GitHub-Repo-181717?logo=github" alt="Repo" /></a>
-      </p>
-      <p>Cross-modal audio-visual sound-source verification engine matching acoustic and visual sources at 1-second temporal resolution across 28 categories with three prediction heads for temporal presence and soundtrack authentication.</p>
-      <p><code>PyTorch</code> • <code>Multimodal AI</code> • <code>Audio-Visual DSP</code> • <code>Temporal Alignment</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="center">🎙️ <a href="https://github.com/s3arajgupta/Hackathon-SAMSUNG-Name-Calling">On-Device Spoken Name Detection</a></h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Samsung%20PRISM-1st%20Place%20(1%2F220%2B)-1428A0?logo=samsung&logoColor=white" alt="1st Place" />
-        <a href="https://github.com/s3arajgupta/Hackathon-SAMSUNG-Name-Calling"><img src="https://img.shields.io/badge/GitHub-Repo-181717?logo=github" alt="Repo" /></a>
-      </p>
-      <p>Zero-ASR Siamese Twin CNN & Librosa Mel-spectrogram extraction producing robust acoustic embeddings on 1,260+ samples for spoken keyword detection in noisy environments.</p>
-      <p><code>TensorFlow / Keras</code> • <code>Librosa</code> • <code>Audio DSP</code> • <code>Siamese CNN</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" valign="top">
-      <h3 align="center">🌐 <a href="https://github.com/s3arajgupta/Research-MITACS-GitHub-AR-Artifacts-Data-Mining">GitHub AR/XR Artifacts Data Mining</a></h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Mitacs-Globalink%20Research%20Award-E31837?logo=canva&logoColor=white" alt="Mitacs Award" />
-        <a href="https://github.com/s3arajgupta/Research-MITACS-GitHub-AR-Artifacts-Data-Mining"><img src="https://img.shields.io/badge/GitHub-Repo-181717?logo=github" alt="Repo" /></a>
-      </p>
-      <p align="center">GraphQL-based web mining crawlers and empirical software analytics engine extracting 40,000+ Extended Reality (XR) artifacts from GitHub and Stack Overflow with rate-limit optimization and an XR recommendation system.</p>
-      <p align="center"><code>JavaScript</code> • <code>Node.js</code> • <code>GitHub GraphQL API</code> • <code>Empirical Data Mining</code></p>
-    </td>
-  </tr>
-</table>
-
----
-
-### 🛠️ Tech Stack & Architecture
-
-<div align="center">
-
-| Area | Technologies |
-| :--- | :--- |
-| **Agentic AI & GenAI** | `LangGraph` `LangChain` `MCP` `ReAct Agents` `RAG` `Knowledge Graphs` `LangSmith` |
-| **ML, DSP & XAI** | `PyTorch` `TensorFlow / Keras` `scikit-learn` `Librosa (Audio DSP)` `SHAP (XAI)` `MLflow` |
-| **Big Data & Pipelines** | `Apache Spark` `PySpark` `Apache Kafka` `Apache Airflow` `Snowflake` `Databricks` `Iceberg` |
-| **Cloud & Kubernetes** | `Kubernetes (CKAD)` `Docker` `AWS (Glue, EKS, S3, SageMaker, Lambda)` `Azure (AKS, Synapse)` |
-| **Languages** | `Python` `SQL` `Java` `Bash / Linux` `JavaScript` |
 
 </div>
 
